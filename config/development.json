@@ -1,0 +1,33 @@
+{
+  "port": 1987,
+  "hostAddress": "localhost:1987",
+  "databaseHost": "localhost",
+  "databasePort": "27017",
+  "databaseName": "product-tracking-app",
+  "jwtsecret": "nodejwt",
+  "jwtresetsecret": "nodejwt",
+  "jwtOptions": {
+    "expiresIn": "30d"
+  },
+ 
+ 
+  "swaggerDefinition": {
+    "info": {
+      "title": "product-tracking-app(Hritik Bhadauria)",
+      "version": "2.0",
+      "description": "product-tracking-app"
+    },
+   
+
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "tokenauth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  }
+
+ 
+}
